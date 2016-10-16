@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0419 - nested figures</title>
+    <style>
+      body {
+        font: 16px Cambria, Times, serif;
+        color: #4d606d;
+      }
+
+      .product-examples {
+        width: 645px;
+        padding: 20px 10px;
+        margin: 0 0 1.5em;
+        background: #e6f2f9;
+        border: 2px solid #98b8cd;
+        border-radius: 10px;
+        overflow: auto;
+      }
+      .product-examples figcaption {
+        clear: both;
+        padding: 10px 20px;
+        margin: -20px -10px 1.25em;
+        background: #98b8cd;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 0 1px 1px rgba(100,145,170,.75);
+        box-shadow: 0 2px 2px rgba(100,145,170,.25);
+      }
+
+      .product {
+        width: 184px;
+        float: left;
+        padding: 0 5px;
+        margin: 0 10px;
+      }
+      .product img {
+        border: 1px solid #98b8cd;
+        display: block;
+        margin: 0 -5px 10px;
+        box-shadow: 0 2px 2px rgba(100,145,170,.25);
+      }
+      .product figcaption {
+        font: bold .857em Candara, "Trebuchet MS", sans-serif;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        text-shadow: none;
+        box-shadow: none;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+
+    <figure class="product-examples">
+      <figcaption>A few of our most popular domino mask designs</figcaption>
+
+      <figure class="product">
+        <img src="images/masks/mdts40-th.jpg" alt="" width="192" height="170">
+        <figcaption>Model MDTS40<br>“The Colt”</figcaption>
+      </figure>
+
+      <figure class="product">
+        <img src="images/masks/mdmv77-th.jpg" alt="" width="192" height="170">
+        <figcaption>Model MDMV77<br>“The Danvers”</figcaption>
+      </figure>
+
+      <figure class="product">
+        <img src="images/masks/mddc59-th.jpg" alt="" width="192" height="170">
+        <figcaption>Model MDDC59<br>“The Jordan”</figcaption>
+      </figure>
+    </figure>
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0829 - remove the default fieldset border</title>
+    <style>
+      fieldset {
+        border: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form>
+
+      <fieldset>
+        <legend>Subscribe to our newsletter</legend>
+        <p>
+          <label for="email">Your e-mail address</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <fieldset>
+          <legend>Select your preferred format</legend>
+          <ul>
+            <li>
+              <label for="text">
+                <input type="radio" id="text" name="format" value="text"> Plain text
+              </label>
+            </li>
+            <li>
+              <label for="html">
+                <input type="radio" id="html" name="format" value="html"> HTML
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <p><button type="submit">Subscribe</button></p>
+      </fieldset>
+
+    </form>
+
+  </body>
+</html>

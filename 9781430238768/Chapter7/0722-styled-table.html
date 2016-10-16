@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0722 - styled table</title>
+
+    <style>
+      table {
+        width: 600px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        border-collapse: separate;
+        border-spacing: 10px 5px;
+        table-layout: auto;
+        empty-cells: hide;
+      }
+
+      thead th,
+      tfoot th,
+      tfoot td {
+        background: #eee;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      thead th:first-child {
+        text-align: left;
+      }
+
+      tbody th,
+      tfoot th {
+        text-align: left;
+      }
+
+      tbody tr:nth-child( even ) {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Price</th>
+          <th scope="col">Totals</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Utility Belts</th>
+          <td>9</td>
+          <td>$129.99</td>
+          <td>$1,169.91</td>
+        </tr>
+        <tr>
+          <th scope="row">Grappling Hooks</th>
+          <td>27</td>
+          <td>$79.99</td>
+          <td>$2,159.73</td>
+        </tr>
+        <tr>
+          <th scope="row">Smoke Pellets</th>
+          <td>623</td>
+          <td>$4.99</td>
+          <td>$3,108.77</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Totals</th>
+          <td>659</td>
+          <td></td>
+          <td>$6,438.41</td>
+        </tr>
+      </tfoot>
+    </table>
+
+  </body>
+</html>

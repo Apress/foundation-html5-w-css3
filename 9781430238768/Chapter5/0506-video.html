@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0506 - video with fallback content</title>
+  </head>
+  <body>
+
+    <video controls width="468" height="350" poster="images/mechanical-monsters.jpg">
+      <source src="video/mechanical-monsters.webm" type="video/webm">
+      <source src="video/mechanical-monsters.ogv" type="video/ogg">
+      <source src="video/mechanical-monsters.mp4" type="video/mp4">
+
+      <object data="flash/video-player.swf" type="application/x-shockwave-flash" width="468" height="350">
+        <param name="flashvars" value="file=video/mechanical-monsters.mp4">
+        <param name="allowfullscreen" value="true">
+        <param name="allowscriptaccess" value="always">
+
+        <img src="images/mechanical-monsters.jpg" alt="">
+
+        <p>Download this exciting video clip in
+        <a href="video/mechanical-monsters.ogg">Ogg Theora</a> or
+        <a href="video/mechanical-monsters.mp4">MP4</a> format.</p>
+      </object>
+    </video>
+
+  </body>
+</html>

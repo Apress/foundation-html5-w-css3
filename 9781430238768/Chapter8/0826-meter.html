@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0826 - meter</title>
+    <style>
+      body {
+        font: 15px Calibri, sans-serif;
+      }
+
+      .power-levels {
+        width: 300px;
+        border: 2px solid #98b8cd;
+        border-radius: 7px;
+        padding: 1em;
+        background-color: #e6f2f9;
+      }
+
+      .power-levels dt {
+        float: left;
+        clear: left;
+        width: 140px;
+        margin: 0 5px .5em 0;
+      }
+
+      .power-levels dd {
+        clear: right;
+        margin: 0 0 .5em;
+      }
+
+      .power-levels meter {
+        width: 150px;
+        height: 1em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>Power Levels</h2>
+    <dl class="power-levels">
+      <dt>Strength:</dt>
+      <dd><meter max="10" high="8" low="2" value="6">6</meter></dd>
+      <dt>Agility:</dt>
+      <dd><meter max="10" high="8" low="2" value="9">9</meter></dd>
+      <dt>Stamina:</dt>
+      <dd><meter max="10" high="8" low="2" value="7">7</meter></dd>
+      <dt>Energy Projection:</dt>
+      <dd><meter max="10" high="8" low="2" value="0">0</meter></dd>
+      <dt>Combat Skills:</dt>
+      <dd><meter max="10" high="8" low="2" value="7">7</meter></dd>
+    </dl>
+
+  </body>
+</html>

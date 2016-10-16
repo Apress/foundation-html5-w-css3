@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0827 - details and summary</title>
+    <style>
+      body {
+        font: 15px Calibri, sans-serif; padding:30px;
+      }
+      h3, p, dl {
+        margin: 0 0 .5em;
+      }
+
+      .product {
+        width: 300px;
+        float: left;
+        border: 2px solid #98b8cd;
+        border-radius: 7px;
+        padding: 15px;
+        background-color: #e6f2f9;
+        margin: 0 15px 1.5em;
+      }
+
+      .product dt {
+        float: left;
+        clear: left;
+        width: 120px;
+        margin: 0 5px .5em 0;
+        font-weight: bold;
+      }
+
+      .product dd {
+        clear: right;
+        margin: 0 0 .5em 130px;
+      }
+
+      .product details {
+        display: block;
+        margin: 1em 0 0;
+        border-radius: 5px;
+        padding: 10px 10px 5px;
+        background: rgba(255,255,255,.5);
+      }
+
+      .product summary {
+        display: block;
+        margin: 0 0 .5em;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="product">
+      <h3>V900 Portable Shrink Ray</h3>
+      <p>Shrink and unshrink inanimate objects with point-and-shoot simplicity!</p>
+      <p><strong class="price">$10,799</strong></p>
+
+      <details>
+        <summary>Product info</summary>
+        <dl>
+          <dt>Colors</dt>
+          <dd>Midnight black, cherry red, powder blue, violet mist, seafoam green</dd>
+          <dt>Dimensions</dt>
+          <dd>10.8 x 4.3 x 8.5 inches (27.5 x 10.9 x 21.6 cm)</dd>
+          <dt>Shipping Weight</dt>
+          <dd>2.8 pounds (1.27 kg)</dd>
+          <dt>Power Supply</dt>
+          <dd>4.4mW quantum fusion battery (included)</dd>
+        </dl>
+      </details>
+    </div>
+
+    <div class="product">
+      <h3>Bionic Eye</h3>
+      <p>See into the far reaches! Processes electromagnetic frequencies beyond ordinary human vision directly into your brain. Installed in a simple outpatient procedure.</p>
+      <p><b class="price">$23,299</b> (each)</p>
+
+      <details>
+        <summary>Product info</summary>
+        <dl>
+          <dt>Colors</dt>
+          <dd>Brown, blue, green, hazel, red</dd>
+          <dt>Frequency Range</dt>
+          <dd>3EHz (Hard X rays) to 220GHz (Near infra-red)</dd>
+          <dt>Telescopic Range</dt>
+          <dd>20:20 at 4,200 meters (20x optical zoom)</dd>
+          <dt>Installation</dt>
+          <dd>2-hour outpatient procedure, by appointment only</dd>
+        </dl>
+      </details>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0510 - canvas</title>
+    <style>
+      #myCanvas { outline: 1px solid gray; }
+    </style>
+
+    <script>
+      window.onload = function(){
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+
+        context.fillStyle = 'lightblue';                // Set the fill color
+        context.fillRect(50, 40, 150, 150);             // Draw the filled rectangle
+
+        context.strokeStyle = 'midnightblue';           // Set the stroke color
+        context.lineWidth = 8;                          // Set the stroke width
+        context.arc(125, 115, 40, 0, Math.PI*2, true);  // Create the circle path
+        context.stroke();                               // Add the stroke to the path
+      }
+    </script>
+
+  </head>
+  <body>
+
+    <canvas id="myCanvas" width="360" height="240"></canvas>
+
+  </body>
+</html>

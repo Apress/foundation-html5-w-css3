@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0821 - button</title>
+    <style>
+      button.fancy {
+        border: 0;
+        padding: 0;
+        background: transparent none;
+        cursor: pointer;
+      }
+
+      button.fancy img {
+        float: right;
+        margin: .45em 0 .25em 10px;
+      }
+
+      button.fancy em {
+        float: left;
+        font: normal bold 14px/1.45 Cambria, sans-serif;
+        text-transform: uppercase;
+        color: darkslateblue;
+        border-radius: .99em;
+        padding: .2em 15px;
+        background: #fea;
+        border: 2px solid darkslateblue;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.2), inset 0 0 6px rgba(255,190,0,.75);
+      }
+
+      button.fancy:hover em,
+      button.fancy:focus em {
+        background: #ffc;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form>
+
+      <p>
+        <button type="submit" name="save" formnovalidate>
+          <em>Save and continue</em>
+          <img src="images/next.png" width="28" height="20" alt="">
+        </button>
+      </p>
+
+      <p>
+        <button type="submit" name="save" formnovalidate class="fancy">
+          <em>Save and continue</em>
+          <img src="images/next.png" width="28" height="20" alt="">
+        </button>
+      </p>
+
+    </form>
+
+  </body>
+</html>
+

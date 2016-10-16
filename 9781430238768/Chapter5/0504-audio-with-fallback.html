@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0504 - audio with fallback content</title>
+  </head>
+  <body>
+
+    <audio controls preload="metadata">
+      <source src="audio/Townsville.ogg" type="audio/ogg">
+      <source src="audio/Townsville.mp3" type="audio/mpeg">
+      <object data="flash/audio-player.swf?soundFile=audio/Townsville.mp3" width="250" height="25" type="application/x-shockwave-flash">
+        <param name="movie" value="flash/player.swf?soundFile=audio/Townsville.mp3">
+      </object>
+    </audio>
+
+    <hr>
+
+    <audio controls preload="metadata">
+      <source src="audio/Townsville.ogg" type="audio/ogg">
+      <source src="audio/Townsville.mp3" type="audio/mpeg">
+
+      <object data="flash/audio-player.swf?soundFile=audio/Townsville.mp3" width="250" height="25" type="application/x-shockwave-flash">
+        <param name="movie" value="flash/player.swf?soundFile=audio/Townsville.mp3">
+
+        <p>Download this delightful tune in either
+        <a href="audio/Townsville.mp3">MP3</a> or
+        <a href="audio/Townsville.ogg">Ogg Vorbis</a> format.</p>
+      </object>
+    </audio>
+
+  </body>
+</html>

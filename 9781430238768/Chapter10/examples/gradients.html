@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gradient Examples</title>
+    <!-- Fonts from Google: http://www.google.com/webfonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Satisfy">
+    <style>
+    .haiku {
+      margin: 50px;
+      width: 400px;
+      height: 150px;
+      padding: 50px;
+      border-radius: 50px;
+      border: 10px solid #d2bdcb;
+      box-shadow: inset 0 0 6px rgba(0,0,0,.2), 2px 2px 2px rgba(0,0,0,.5);
+      background: #bba8b5;
+      background: -moz-linear-gradient(-70deg, rgb(187,168,181) 30%, rgba(187,168,181,0) 70%), url(images/bg-pattern.png);
+      background: -webkit-linear-gradient(-70deg, rgb(187,168,181) 30%, rgba(187,168,181,0) 70%), url(images/bg-pattern.png);
+      background: -o-linear-gradient(-70deg, rgb(187,168,181) 30%, rgba(187,168,181,0) 70%), url(images/bg-pattern.png);
+      background: linear-gradient(160deg, rgb(187,168,181) 30%, rgba(187,168,181,0) 70%), url(images/bg-pattern.png);
+    }
+    .haiku pre {
+      margin: 0 auto;
+      font: 32px Satisfy, cursive;
+      color: #fff;
+      text-shadow: 1px 1px 0 rgba(0,0,0,.2), 2px 2px 2px rgba(0,0,0,.2);
+    }
+
+    .dusk {
+      margin: 50px;
+      width: 400px;
+      height: 200px;
+      border: 6px outset gold;
+      background-color: #006;
+      background: -moz-radial-gradient(250px 50px, circle farthest-corner, #ffe 10%, #fc0 20%, #f30 30%, #006 60%);
+      background: -o-radial-gradient(250px 50px, circle farthest-corner, #ffe 10%, #fc0 20%, #f30 30%, #006 60%);
+      background: -webkit-radial-gradient(250px 50px, circle farthest-corner, #ffe 10%, #fc0 20%, #f30 30%, #006 60%);
+      background: radial-gradient(250px 50px, circle farthest-corner, #ffe 10%, #fc0 20%, #f30 30%, #006 60%);
+    }
+    </style>
+  </head>
+  <body>
+
+    <article class="haiku">
+      <pre>
+even little things
+can have great impact if they’re
+radioactive
+      </pre>
+    </article>
+
+    <div class="dusk"></div>
+
+  </body>
+</html>

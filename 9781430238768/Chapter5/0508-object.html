@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0508 - object with audio fallback</title>
+  </head>
+  <body>
+
+    <object data="flash/audio-player.swf?soundFile=audio/Townsville.mp3" width="250" height="25" type="application/x-shockwave-flash">
+      <param name="movie" value="flash/audio-player.swf?soundFile=audio/Townsville.mp3">
+      <param name="allowscriptaccess" value="always">
+      <param name="menu" value="false">
+      <param name="wmode" value="transparent">
+
+      <audio controls>
+        <source src="audio/Townsville.mp3" type="audio/mpeg;codec=mpeg">
+        <source src="audio/Townsville.ogg" type="audio/ogg;codec=vorbis">
+        <p>Download this tune in <a href="audio/Townsville.mp3">MP3</a>
+        or <a href="audio/Townsville.ogg">Ogg Vorbis</a> format.</p>
+      </audio>
+    </object>
+
+
+  </body>
+</html>

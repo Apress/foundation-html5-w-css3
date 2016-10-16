@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0833 - inheriting fonts in form fields</title>
+    <style>
+      body {
+        font: 16px Calibri, sans-serif;
+      }
+
+      ol {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+      }
+
+      li {
+        margin: .5em 0;
+      }
+
+      label {
+        float: left;
+        width: 200px;
+        margin-right: 15px;
+        text-align: right;
+      }
+
+      .submit {
+        padding-left: 215px;
+      }
+
+      input, select, textarea, button {
+        font-family: inherit;
+        font-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form>
+
+      <ol>
+        <li>
+          <label for="name">Your name</label>
+          <input type="text" id="name" size="35" value="Karen Starr">
+        </li>
+        <li>
+          <label for="email">Your E-mail address</label>
+          <input type="text" id="email" size="35" value="kzstarr@example.com">
+        </li>
+        <li>
+          <label for="subject">What's this about?</label>
+          <select id="subject">
+            <option value="" selected>-- select --</option>
+            <option value="hello">I'm just saying "hello"</option>
+            <option value="productquestion">I have a question about a product</option>
+            <option value="schedule">I need to schedule a fitting or installation</option>
+            <option value="complaint">I'd like to lodge a complaint</option>
+          </select>
+        </li>
+        <li>
+          <label for="message">Your message</label>
+          <textarea id="message" cols="30" rows="10">
+Hey gang,
+
+Just wanted to say thanks for patching that big hole in my costume. How embarrassing! Also, I love the new website! Keep up the good work.
+          </textarea>
+        </li>
+        <li class="submit">
+          <button type="submit">Send It!</button>
+        </li>
+      </ol>
+
+    </form>
+
+  </body>
+</html>
+

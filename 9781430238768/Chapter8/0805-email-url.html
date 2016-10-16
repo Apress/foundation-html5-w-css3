@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>0805 - email and url inputs</title>
+    <style>
+      ul {
+        list-style: none;
+        width: 170px;
+        padding: 15px;
+        border: 1px solid #ccc;
+      }
+
+      li {
+        margin: 0 0 1em;
+      }
+
+      label {
+        display: block;
+        margin: 0 0 .25em;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form>
+
+      <ul>
+        <li>
+          <label for="name">Your name (required)</label>
+          <input type="text" id="name" name="name" required>
+        </li>
+        <li>
+          <label for="email">Your e-mail address (required, not published)</label>
+          <input type="email" id="email" name="email" required>
+        </li>
+        <li>
+          <label for="url">Your website</label>
+          <input type="url" id="url" name="url">
+        </li>
+      </ul>
+
+    </form>
+
+  </body>
+</html>

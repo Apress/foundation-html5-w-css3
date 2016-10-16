@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Text Shadow Examples</title>
+    <style>
+      /* Fonts from Google: http://www.google.com/webfonts */
+      @font-face {
+        font-family: "Dr Sugiyama";
+        src: url(fonts/drsugiyama-regular-webfont.woff) format("woff"),
+             url(fonts/drsugiyama-regular-webfont.ttf) format("truetype");
+      }
+
+      @font-face {
+        font-family: "Fugaz One";
+        src: url(fonts/fugazone-regular-webfont.woff) format("woff"),
+             url(fonts/fugazone-regular-webfont.ttf) format("truetype");
+      }
+
+      @font-face {
+        font-family: Bangers;
+        src: url(fonts/bangers-webfont.woff) format("woff"),
+             url(fonts/bangers-webfont.ttf) format("truetype");
+      }
+
+      .example {
+        padding: 40px 20px;
+        width: 450px;
+        text-align: center;
+        margin: 0 0 10px;
+        border: 1px solid rgba(0,0,0,.25);
+      }
+
+      .example p {
+        font-size: 60px;
+        line-height: 1.1;
+        margin: 0;
+      }
+
+      .glow {
+        background: #000 url(images/bg-space.jpg) center center no-repeat;
+        font-family: "Dr Sugiyama", cursive;
+        color: #9f9;
+        text-shadow: 0 0 2px #fff, 0 0 10px #3f3, 0 0 20px #0f0, 0 0 40px #0f0, 0 0 2px #fff;
+      }
+
+      .overlay {
+        background: #eee url(images/bg-damask.jpg) center center no-repeat;
+        font-family: "Fugaz One", fantasy;
+        letter-spacing: -4px;
+        color: rgba(0,100,100,0.5);
+        text-shadow: 7px 10px 0px rgba(150,0,255,0.25), -9px -8px 0 rgba(255,150,0,.5);
+      }
+
+      .threedee {
+        background: #306 url(images/bg-grunge.jpg) center center no-repeat; 
+        font-family: Bangers, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #fffca8;
+        text-shadow: 0 0 0 rgb(235,231,115),
+                    -1px -1px 0 rgb(225,221,105),
+                    -2px -2px 0 rgb(215,211,95),
+                    -3px -3px 0 rgb(205,201,85),
+                    -4px -4px 0 rgb(195,191,75),
+                    -5px -5px 0 rgb(185,181,65),
+                    -6px -6px 0 rgb(175,171,55),
+                    -7px -7px 0 rgb(165,161,45),
+                    -8px -8px 0 rgb(155,151,35),
+                    -9px -9px 0 rgb(145,141,25),
+                    -10px -10px 0 rgb(135,131,15),
+                    -11px -11px 0 rgb(125,121,5), 
+                    -12px -12px 0 rgb(115,111,-5),
+                    -13px -13px 12px rgba(0,0,0,0.6),
+                    -13px -13px 1px rgba(0,0,0,0.5),
+                     0 0 12px rgba(0,0,0,.2);
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="example glow">
+      <p>Radiant Energy</p>
+    </div>
+
+    <div class="example overlay">
+      <p>X-Ray Vision</p>
+    </div>
+
+    <div class="example threedee">
+      <p>Arch Nemesis</p>
+    </div>
+
+  </body>
+</html>

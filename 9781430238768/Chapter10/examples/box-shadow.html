@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Box Shadow Examples</title>
+    <style>
+      .shadow {
+        width: 250px;
+        padding: 20px;
+        margin: 20px 50px;
+        text-align: center;
+        color: #999;
+        background: #eee;
+        box-shadow: 5px 5px #ccc, 10px 10px #999, 15px 15px #666;
+      }
+
+      .shadow h2 {
+        margin: 30px auto;
+        font: 20px Cambria;
+      }
+
+      .example {
+        width: 150px;
+        height: 100px;
+        margin: 20px 50px;
+        float: left;
+      }
+
+      hr {
+        clear: both;
+        margin: 50px auto;
+      }
+
+      .multiborder {
+        background: #fff;
+        box-shadow: 0 0 0 5px #330, 
+                    0 0 0 10px #360, 
+                    0 0 0 15px #390, 
+                    0 0 0 20px #3c0, 
+                    0 0 0 25px #3f0;
+      }
+
+      .cutout {
+        background: #fea;
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,.5), 
+                    inset 0 0 10px rgba(0,0,0,.25);
+      }
+
+      .space {
+        padding: 50px;
+        width: 150px;
+        float: left;
+        margin: -30px 20px 20px 0;
+        background: #000 url(images/bg-space.jpg) center center no-repeat;
+      }
+
+      .glow {
+        margin: 0;
+        background: #3a0079;
+        box-shadow: 0 0 10px 10px #0fc;
+      }
+
+      .bevel {
+        background: #c03;
+        border-radius: 25px;
+        box-shadow: inset 3px 3px 8px #fcc, 
+                    inset -3px -3px 8px #600, 
+                    2px 2px 2px rgba(0,0,0,.5);
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="shadow">
+      <h2>Who knows what evil lurks in the hearts of men?</h2>
+    </div>
+
+    <hr>
+
+    <div class="example multiborder"></div>
+
+    <div class="space">
+     <div class="example glow"></div>
+    </div>
+
+    <div class="example cutout"></div>
+
+    <div class="example bevel"></div>
+
+  </body>
+</html>
